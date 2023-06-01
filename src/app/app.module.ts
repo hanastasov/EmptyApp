@@ -3,20 +3,22 @@ import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MasterView1Component } from './master-view1/master-view1.component';
-import { MasterView2Component } from './master-view2/master-view2.component';
+import { ChildViewComponent } from './child-view/child-view.component';
+import { IgxAvatarModule } from '@infragistics/igniteui-angular';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MasterView1Component,
-    MasterView2Component
+    ChildViewComponent
   ],
   imports: [
     BrowserModule,
     HammerModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    IgxAvatarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

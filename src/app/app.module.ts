@@ -4,8 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChildViewComponent } from './child-view/child-view.component';
-import { IgxAvatarModule } from '@infragistics/igniteui-angular';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,9 +14,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     HammerModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    IgxAvatarModule,
-    FormsModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

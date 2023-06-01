@@ -5,10 +5,7 @@
   align-items: stretch;
   align-content: flex-start;
 }
-.view-container {
-  overflow: auto;
-  position: relative;
-  min-width: 0;
-  min-height: 0;
-  flex-grow: 1;
+.text {
+  height: max-content;
+  min-width: min-content;
 }

@@ -5,6 +5,7 @@
   align-items: stretch;
   align-content: flex-start;
 }
-.avatar {
-  --igx-avatar-background: transparent;
+.text {
+  height: max-content;
+  min-width: min-content;
 }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MasterViewComponent } from './master-view.component';
+import { ChildViewComponent } from './child-view.component';
 
-describe('MasterViewComponent', () => {
-  let component: MasterViewComponent;
-  let fixture: ComponentFixture<MasterViewComponent>;
+describe('ChildViewComponent', () => {
+  let component: ChildViewComponent;
+  let fixture: ComponentFixture<ChildViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MasterViewComponent ]
+      declarations: [ ChildViewComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MasterViewComponent);
+    fixture = TestBed.createComponent(ChildViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

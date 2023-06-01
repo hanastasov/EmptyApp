@@ -4,12 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './error-routing/not-found/not-found.component';
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
 import { ErrorRoutingModule } from './error-routing/error-routing.module';
-import { MasterViewComponent } from './master-view/master-view.component';
+import { ChildViewComponent } from './child-view/child-view.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'master-view', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
-  { path: '', redirectTo: 'master-view', pathMatch: 'full' }, { path: 'master-view', component: MasterViewComponent, data: { text: 'Master View' } },
+  { path: '', redirectTo: 'child-view', pathMatch: 'full' }, { path: 'child-view', component: ChildViewComponent, data: { text: 'Child View' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 

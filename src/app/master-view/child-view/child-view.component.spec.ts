@@ -1,5 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+import { IgxAvatarModule } from '@infragistics/igniteui-angular';
 import { ChildViewComponent } from './child-view.component';
 
 describe('ChildViewComponent', () => {
@@ -8,10 +11,13 @@ describe('ChildViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChildViewComponent ]
+      declarations: [ ChildViewComponent ],
+      imports: [ NoopAnimationsModule, FormsModule, IgxAvatarModule ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ChildViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
